@@ -1,4 +1,4 @@
-body {
+ body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +9,16 @@ body {
   font-size: 120%;
 }
 
+.app {
+  background-image: url('');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+}
+
+.app.cold {
+  background-image: url('');
+}
 .card {
   background: #000000d0;
   color: white;
@@ -96,6 +106,8 @@ img{
 .bold {
   font-weight: 700;
 }
+
+
 
 /*.results.loading {
   visibility: hidden;
