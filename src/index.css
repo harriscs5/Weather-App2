@@ -55,7 +55,7 @@ button:hover {
   background: #7c7c7c6b;
 }
 
-.weather .city {
+.top .city {
   color: #FFF;
   font-size: 32px;
   font-weight: 500;
@@ -98,20 +98,22 @@ img{
   font-weight: 700;
 }
 
-/*.weather.loading {
+.results.loading {
   visibility: hidden;
   max-height: 20px;
   position: relative;
 }
 
-.weather.loading:after {
+.results .loading:after {
   visibility: visible;
-  content: "Loading...";
   color: white;
   position: absolute;
   top: 0;
   left: 20px;
-}*/
+}
+
+
+
 
 
 
