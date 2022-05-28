@@ -1,4 +1,8 @@
 import React from "react";
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Tiro+Devanagari+Marathi:ital@1&display=swap');
+</style>
+
 
 function App() {
   return (
@@ -37,14 +41,17 @@ function App() {
         <div className="bottom">
 
                 <div className="feels">
+                <p>91°F</p>
                   <p>Feels like</p>
                 </div>
 
                 <div className="humidity">
+                <p>90%</p>
                   <p>Humidity</p>
                 </div>
 
                 <div className="wind">
+                <p>24</p>
                   <p>MPH</p>
                 </div>
 

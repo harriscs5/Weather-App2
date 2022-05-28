@@ -59,7 +59,9 @@ button:hover {
   color: #FFF;
   font-size: 32px;
   font-weight: 500;
+  text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  font-family: 'Tiro Devanagari Marathi', serif;
 }
 
 .temp {
@@ -74,7 +76,7 @@ button:hover {
 
 .description {
   text-transform: capitalize;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 img{
@@ -82,8 +84,19 @@ img{
   height: 60px;
 
 }
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
-
+.bold {
+  font-weight: 700;
+}
 
 /*.weather.loading {
   visibility: hidden;
