@@ -54,9 +54,12 @@ const searchCity = (event) => {
                               {data.main ? <h2>{data.main.temp}°F</h2> : null}
                             </div>
 
-                            <img src="https://openweathermap.org/img/wn/04n.png" alt="weather status icon" className="weather-icon" />
+                            
+
+                            <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`} 
+                            alt="weather status icon" className="weather-icon" />
                             <div className="description">
-                                <p>Cloudy</p>
+                                {data.weather ? <p>{data.weather.description}</p> : null}
                             </div>
 
                         </div>
@@ -67,17 +70,17 @@ const searchCity = (event) => {
                       <div className="bottom loading">
 
                                   <div className="feels">
-                                  <p>91°F</p>
+                                    {data.main ? <p>{data.main.feels_like}°F</p> : null}
                                     <p>Feels like</p>
                                   </div>
 
                                   <div className="humidity">
-                                  <p>90%</p>
+                                  {data.main ? <p>{data.main.humidity}%</p> : null}
                                     <p>Humidity</p>
                                   </div>
 
                                   <div className="wind">
-                                  <p>24</p>
+                                    {data.wind ? <p>{data.wind.speed}</p> : null}
                                     <p>MPH</p>
                                   </div>
 
