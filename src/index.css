@@ -98,7 +98,7 @@ img{
   font-weight: 700;
 }
 
-.results.loading {
+/*.results.loading {
   visibility: hidden;
   max-height: 20px;
   position: relative;
@@ -110,7 +110,7 @@ img{
   position: absolute;
   top: 0;
   left: 20px;
-}
+}*/
 
 
 

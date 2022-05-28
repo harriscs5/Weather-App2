@@ -39,50 +39,53 @@ const searchCity = (event) => {
           />
 
         </div>
-  <div className="results loading">
-              <div className="top">
 
-                <div className="city">
-                    <h2>New York City</h2>
-                </div>
+        {data.name !== undefined && 
+          <div className="results loading">
+                      <div className="top">
 
-                <div className="flex">
+                        <div className="city">
+                            <h2>{data.name}</h2>
+                        </div>
 
-                    <div className="temp">
-                      <h1>51°F</h1>
-                    </div>
+                        <div className="flex">
 
-                    <img src="https://openweathermap.org/img/wn/04n.png" alt="weather status icon" className="weather-icon" />
-                    <div className="description">
-                        <p>Cloudy</p>
-                    </div>
+                            <div className="temp">
+                              {data.main ? <h2>{data.main.temp}°F</h2> : null}
+                            </div>
 
-                </div>
+                            <img src="https://openweathermap.org/img/wn/04n.png" alt="weather status icon" className="weather-icon" />
+                            <div className="description">
+                                <p>Cloudy</p>
+                            </div>
 
-
-              </div>
-            
-              <div className="bottom loading">
-
-                          <div className="feels">
-                          <p>91°F</p>
-                            <p>Feels like</p>
-                          </div>
-
-                          <div className="humidity">
-                          <p>90%</p>
-                            <p>Humidity</p>
-                          </div>
-
-                          <div className="wind">
-                          <p>24</p>
-                            <p>MPH</p>
-                          </div>
+                        </div>
 
 
-              </div>
-    </div>
-        
+                      </div>
+                    
+                      <div className="bottom loading">
+
+                                  <div className="feels">
+                                  <p>91°F</p>
+                                    <p>Feels like</p>
+                                  </div>
+
+                                  <div className="humidity">
+                                  <p>90%</p>
+                                    <p>Humidity</p>
+                                  </div>
+
+                                  <div className="wind">
+                                  <p>24</p>
+                                    <p>MPH</p>
+                                  </div>
+
+
+                      </div>
+            </div>
+        }
+                
 
         
       
