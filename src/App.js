@@ -24,7 +24,7 @@ const searchCity = (event) => {
 
 
   return (
-    <div className="app">
+    <div className={(typeof data.main != "undefined") ? ((data.main.temp < 70) ? 'app cold' : 'app') : 'app'}>
     <main>
       <div className="card">
 
