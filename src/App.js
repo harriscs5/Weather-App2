@@ -25,6 +25,7 @@ const searchCity = (event) => {
 
   return (
     <div className="app">
+    <main>
       <div className="card">
 
         <div className="search-box">
@@ -94,7 +95,9 @@ const searchCity = (event) => {
       
       
       </div>
+      </main>
     </div>
+
   );
 }
 
