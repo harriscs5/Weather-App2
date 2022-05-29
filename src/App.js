@@ -80,8 +80,8 @@ const searchCity = (event) => {
                                   </div>
 
                                   <div className="wind">
-                                    {data.wind ? <p>{data.wind.speed}</p> : null}
-                                    <p>MPH</p>
+                                    {data.wind ? <p>{data.wind.speed} MPH</p> : null}
+                                    <p>Wind Speed</p>
                                   </div>
 
 
