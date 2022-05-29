@@ -12,6 +12,18 @@ const [city, setCity] = useState('')
 
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=47faa98c00b88628615e4d2eb7a2d9d9`
 
+const dateBuilder = (d) => {
+  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
+
+  let day = days[d.getDay()];
+  let date = d.getDate();
+  let month = months[d.getMonth()];
+  let year = d.getFullYear();
+
+  return `${day}, ${date} ${month} ${year}`
+}
+
 const searchCity = (event) => {
   if (event.key === 'Enter') {
     axios.get(url).then((response) => {
@@ -40,6 +52,8 @@ const searchCity = (event) => {
           />
 
         </div>
+
+        <h1 className="date">{dateBuilder(new Date())}</h1>
 
         {data.name !== undefined && 
           <div className="results loading">

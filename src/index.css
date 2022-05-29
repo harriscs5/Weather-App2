@@ -20,6 +20,10 @@ body {
   transition: 0.4 ease-in-out;
 }
 
+.date {
+  text-align: center;
+}
+
 .app.cold {
   background-image: url('./assets/cold-bg.jpg');
 }
