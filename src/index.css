@@ -94,6 +94,7 @@ button:hover {
 .description {
   text-transform: capitalize;
   font-size: 28px;
+  text-align: center;
 }
 
 img{

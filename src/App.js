@@ -73,8 +73,9 @@ const searchCity = (event) => {
 
                             <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`} 
                             alt="weather status icon" className="weather-icon" />
+
                             <div className="description">
-                                {data.weather ? <p>{data.weather.description}</p> : null}
+                                {data.weather ? <p>{data.weather[0].description}</p> : null}
                             </div>
 
                         </div>
